@@ -27,7 +27,7 @@ getLocation.then(getWeather);
 
 function canGetData() {
   const intervalTime = 3 * 60 * 60 * 1000;
-  if (!localStorage.time || new Date().getTime() - localStorage.time > intervalTime) {
+  if (!localStorage.time || new Date().getTime() - localStorage.time > intervalTime || !localStorage.weatherData) {
     return true;
   } else {
     return false;
