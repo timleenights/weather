@@ -9,7 +9,7 @@ A Chrome extension for displaying the local weather in China.
 
 The Chrome extension using [和风天气 API](https://www.heweather.com/documents)
 
-安装: [Chrome 网上应用店]()，或者直接 [下载](https://github.com/timleenights/weather/blob/master/weather.crx)
+安装: [Chrome 网上应用店](https://chrome.google.com/webstore/detail/%E4%B8%89%E5%A4%A9/bgmcjknbhoegabgligjfhajhnjlkmckj?hl=zh-CN)，或者直接 [下载](https://github.com/timleenights/weather/blob/master/weather.crx)
 
 ### 特性
 

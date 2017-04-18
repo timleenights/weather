@@ -27,7 +27,7 @@ getLocation.then(getWeather);
 
 function canGetData() {
   const intervalTime = 3 * 60 * 60 * 1000;
-  if (!localStorage.time || new Date().getTime() - localStorage.time > intervalTime || !localStorage.weatherData) {
+  if (!localStorage.time || !localStorage.city || !localStorage.weatherData || new Date().getTime() - localStorage.time > intervalTime) {
     return true;
   } else {
     return false;
@@ -38,7 +38,7 @@ function canGetData() {
 function getWeather(location) {
   console.log('getting weather ...');
 
-  const weatherUrl = 'https://free-api.heweather.com/v5/weather?city=' + location + '&key=yourKey';
+  const weatherUrl = 'https://free-api.heweather.com/v5/weather?city=' + location + '&key=f7ae61dc2f6e4be78b59dc57b1f8cf3a';
   httpRequest(weatherUrl, render);
 }
 
